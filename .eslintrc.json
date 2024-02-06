@@ -18,7 +18,9 @@
   "plugins": ["react", "prettier", "import"],
   "rules": {
     "max-len": ["error", { "code": 120 }],
-    "indent": ["error", 2],
+    "import/prefer-default-export": "off",
+    "default-param-last": "off",
+    "indent": "off",
     "prettier/prettier": "error",
     "linebreak-style": [0, "unix"],
     "quotes": ["error", "single"],
