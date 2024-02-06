@@ -15,7 +15,7 @@ function loaderOff() {
   }
 }
 
-export const showMore = () => {
+export function showMore() {
   return {
     type: SHOW_MORE,
   }
@@ -51,6 +51,7 @@ export function loadTickets(searchId) {
       dispatch(loaderOn())
       let stop = false
       do {
+        // eslint-disable-next-line
         ticketsArr = await aviasalesService
           .getTickets(searchId)
           .then((res) => res)

@@ -1,4 +1,4 @@
-import { SELECT_ALL_ON, SELECT_ALL_OFF, SELECT_FILTER } from '../types.js'
+import { SELECT_ALL_ON, SELECT_ALL_OFF, SELECT_FILTER } from '../types'
 
 const initialState = {
   all: { label: 'Все', checked: true },
